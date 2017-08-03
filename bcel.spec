@@ -5,7 +5,7 @@
 
 Name:           %{?scl_prefix}bcel
 Version:        6.0
-Release:        0.6.20140406svn%{svnrev}.1%{?dist}
+Release:        0.6.20140406svn%{svnrev}.2%{?dist}
 Epoch:          0
 Summary:        Byte Code Engineering Library
 License:        ASL 2.0
@@ -71,6 +71,9 @@ sed -i '\|lib/dt\.jar|s|javaHome|javaHome.substring(0, javaHome.length() - 4)|' 
 %doc LICENSE.txt NOTICE.txt
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 0:6.0-0.6.20140406svn1592769.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 0:6.0-0.6.20140406svn1592769.1%{?dist}
 - Automated package import and SCL-ization
 
